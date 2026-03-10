@@ -149,13 +149,45 @@ export default function CoralPage() {
         <Container className="py-3">
           <div className="flex items-center justify-between gap-4">
             <a
-              href="https://frontierrobo.github.io/"
+              href="#"
               className="text-3xl font-semibold tracking-tight text-slate-900 hover:text-slate-700"
             >
               Frontier Robotics
             </a>
 
             <nav className="hidden items-center gap-6 text-lg text-slate-600 md:flex">
+              <div className="relative group">
+                <button className="flex items-center gap-1 font-semibold hover:text-slate-900 focus:outline-none">
+                  Research
+                  <svg
+                    className="h-4 w-4 transition-transform group-hover:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div className="absolute top-full left-0 mt-2 w-full py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <a
+                    href="https://frontierrobo.github.io/CORAL/"
+                    className="block px-1 py-1 text-sm font-medium text-slate-900"
+                  >
+                    CORAL
+                  </a>
+                  <a
+                    href="https://frontierrobo.github.io/SimVLA/"
+                    className="block px-1 py-1 text-sm text-slate-600 hover:text-slate-900 transition-colors"
+                  >
+                    SimVLA
+                  </a>
+                </div>
+              </div>
               <a className="hover:text-slate-900" href="#overview">
                 Overview
               </a>
@@ -177,9 +209,11 @@ export default function CoralPage() {
         {/* Hero */}
         <section className="pt-12 pb-0">
           <Container>
-            <div className="mx-auto text-center">
-              <h1 className="mt-4 text-balance font-serif text-3xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
-                {CORAL.title}
+            <div className="mx-auto text-center max-w-[90rem]">
+              <h1 className="mt-4 font-serif text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl md:text-[2.75rem] lg:text-5xl whitespace-nowrap">
+                {CORAL.titleLine1}
+                <br />
+                {CORAL.titleLine2}
               </h1>
               <p className="mt-4 text-pretty text-base text-slate-700 sm:text-lg">
                 {CORAL.authors}
@@ -204,6 +238,22 @@ export default function CoralPage() {
                     />
                   </svg>
                   Citation
+                </Button>
+                <Button href="https://frontierrobo.github.io/SimVLA/" variant="secondary">
+                  <svg
+                    className="mr-2 h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                    />
+                  </svg>
+                  SimVLA
                 </Button>
                 <div className="flex items-center gap-2">
                   <ViewCounter slug="coral" />

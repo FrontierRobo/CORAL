@@ -144,5 +144,10 @@ export const CORAL = {
       },
     ],
   },
-  bibtex: ``,
+  bibtex: `@article{luo2026coral,
+  title={CORAL: Scalable Multi-Task Robot Learning via LoRA Experts},
+  author={Luo, Yuankai and Chen, Woping and Liang, Tong and Li, Zhenguo},
+  journal={arXiv preprint arXiv:2602.18224},
+  year={2026}
+}`,
 } as const;

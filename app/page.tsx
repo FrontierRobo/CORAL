@@ -149,7 +149,7 @@ export default function CoralPage() {
         <Container className="py-3">
           <div className="flex items-center justify-between gap-4">
             <a
-              href="https://frontierrobo.github.io/SimVLA/"
+              href="https://frontierrobo.github.io/"
               className="text-3xl font-semibold tracking-tight text-slate-900 hover:text-slate-700"
             >
               Frontier Robotics

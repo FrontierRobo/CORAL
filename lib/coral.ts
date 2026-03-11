@@ -1,6 +1,6 @@
 export const CORAL = {
-  titleLine1: "CORAL: Scalable Multi-Task Robot Learning",
-  titleLine2: "via LoRA Experts",
+  titleLine1: "CORAL: Scalable Multi-Task",
+  titleLine2: "Robot Learning via LoRA Experts",
   authors: "Yuankai Luo, Woping Chen, Tong Liang, Zhenguo Li",
   tagline:
     "A backbone- and embodiment-agnostic framework that resolves multi-task interference in VLA deployment through strict parameter isolation via LoRA experts.",

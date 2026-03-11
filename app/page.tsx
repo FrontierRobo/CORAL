@@ -208,12 +208,10 @@ export default function CoralPage() {
       <main>
         {/* Hero */}
         <section className="pt-12 pb-0">
-          <Container>
-            <div className="mx-auto text-center max-w-[90rem]">
-              <h1 className="mt-4 font-serif text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl md:text-[2.75rem] lg:text-5xl whitespace-nowrap">
-                {CORAL.titleLine1}
-                <br />
-                {CORAL.titleLine2}
+          <div className="w-full px-4 md:px-8">
+            <div className="mx-auto text-center w-full max-w-none">
+              <h1 className="mt-4 font-serif text-4xl font-semibold tracking-tight text-slate-900 sm:text-6xl px-4">
+                CORAL: Scalable Multi-Task<br />Robot Learning via LoRA Experts
               </h1>
               <p className="mt-4 text-pretty text-base text-slate-700 sm:text-lg">
                 {CORAL.authors}
@@ -276,7 +274,7 @@ export default function CoralPage() {
                 </div>
               </div>
             </div>
-          </Container>
+          </div>
         </section>
 
         {/* System Overview Figure */}

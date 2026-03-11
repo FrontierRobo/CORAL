@@ -175,16 +175,16 @@ export default function CoralPage() {
                 </button>
                 <div className="absolute top-full left-0 mt-2 w-full py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                   <a
-                    href="https://frontierrobo.github.io/CORAL/"
-                    className="block px-1 py-1 text-sm font-medium text-slate-900"
-                  >
-                    CORAL
-                  </a>
-                  <a
                     href="https://frontierrobo.github.io/SimVLA/"
                     className="block px-1 py-1 text-sm text-slate-600 hover:text-slate-900 transition-colors"
                   >
                     SimVLA
+                  </a>
+                  <a
+                    href="https://frontierrobo.github.io/CORAL/"
+                    className="block px-1 py-1 text-sm font-medium text-slate-900"
+                  >
+                    CORAL
                   </a>
                 </div>
               </div>
@@ -223,6 +223,22 @@ export default function CoralPage() {
               </p>
 
               <div className="mt-6 flex flex-wrap justify-center gap-3">
+                <Button href="https://arxiv.org/abs/2603.09298" variant="blue">
+                  <svg
+                    className="mr-2 h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                  Paper
+                </Button>
                 <Button href="#citation" variant="secondary">
                   <svg
                     className="mr-2 h-4 w-4"
